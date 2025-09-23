@@ -1,0 +1,12 @@
+name: This is first CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  created_file_on_hosts:
+    runs-on: salf-hosted
+    steps:
+      - name: Generated_files
+        run: echo "peter" >> /home/peter/testgit.txt
