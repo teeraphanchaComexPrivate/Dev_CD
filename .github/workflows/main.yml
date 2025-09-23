@@ -1,4 +1,4 @@
-name: This is first CI
+name: This is first CD
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   created_file_on_hosts:
-    runs-on: salf-hosted
+    runs-on: self-hosted
     steps:
       - name: Generated_files
         run: echo "peter" >> /home/peter/testgit.txt
