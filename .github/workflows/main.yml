@@ -8,5 +8,7 @@ jobs:
   created_file_on_hosts:
     runs-on: self-hosted
     steps:
-      - name: Generated_files
-        run: echo "peter" >> /home/peter/testgit.txt
+      - name: Step 1 Checkout code 
+        uses: actions/checkout@v4
+      #- name: Generated_files
+       # run: echo "peter" >> /home/peter/testgit.txt
