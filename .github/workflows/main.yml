@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Step 1 Checkout code 
         uses: actions/checkout@v4
-        name: Check Cursor
+      - name: Check Cursor
         run: pwd
       - name: Step 2 Copy To Deploy
         run: cp index.html /var/www/html3
