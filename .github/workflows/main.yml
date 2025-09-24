@@ -10,5 +10,9 @@ jobs:
     steps:
       - name: Step 1 Checkout code 
         uses: actions/checkout@v4
+        name: Check Cursor
+        run: pwd
+      - name: Step 2 Copy To Deploy
+        run: cp -a . /var/www/html3
       #- name: Generated_files
        # run: echo "peter" >> /home/peter/testgit.txt
